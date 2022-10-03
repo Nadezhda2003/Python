@@ -32,11 +32,9 @@ def game():
         if x > secret:
             print('Ваше число больше загаданного, попробуйте еще разок')
             total += 1
-            continue
         elif x < secret:
             print('Ваше число меньше загаданного, попробуйте еще разок')
             total += 1
-            continue
     print('Вы угадали, поздравляем!')
     print('Количество попыток: ' + str(total))
 
@@ -48,7 +46,6 @@ while True:
     if ans.lower() in ('д', 'да', 'yes', 'y'):
         q = max_range()
         secret = random.randint(1, q)
-        continue
     else:
         break
 
